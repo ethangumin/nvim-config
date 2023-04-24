@@ -1,17 +1,31 @@
+local opt = vim.opt
+local g = vim.g
+
 --------------------
 -- Global Configs --
 --------------------
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.smartindent = true
-vim.opt.wrap = false
-vim.opt.swapfile = false
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
-vim.opt.scrolloff = 8
-vim.opt.colorcolumn = "80"
+opt.nu = true
+opt.relativenumber = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
+opt.smartindent = true
+opt.wrap = false
+opt.swapfile = false
+opt.hlsearch = false
+opt.incsearch = true
+opt.scrolloff = 8
+opt.colorcolumn = "80"
+opt.backspace = "indent,eol,start"
+g.moonflyTransparent = true
+
+-- clipboard
+opt.clipboard:append("unnamedplus")
+
+-- split windows
+opt.splitright = true
+opt.splitbelow = true
+
+opt.iskeyword:append("-")

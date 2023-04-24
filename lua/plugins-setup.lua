@@ -33,6 +33,13 @@ return packer.startup(function(use)
 
   -- autocompletion
   use("hrsh7th/nvim-cmp") -- completion plugin
+  use("hrsh7th/cmp-buffer") -- source for buffer
+  use("hrsh7th/cmp-path") -- source for paths
+
+  -- snippets
+  use("L3MON4D3/LuaSnip") -- snippet engine
+  use("saadparwaiz1/cmp_luasnip") -- source nvim-cmp to show snippets for autocompletion
+  use("rafamadriz/friendly-snippets") -- collection of useful snippets for different languages
 
   -- required for telescope
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
@@ -64,6 +71,17 @@ return packer.startup(function(use)
   -- formatting & linting
   use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
   use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+
+  -- auto closing
+  use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
+  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+
+  -- tmux & split window navigation
+  use("christoomey/vim-tmux-navigator")
+  use("szw/vim-maximizer") -- maximizes and restores current window
+
+  -- colors
+  use("bluz71/vim-moonfly-colors") -- color scheme
 
   -- This must be at the end after all plugins
   if packer_bootstrap then

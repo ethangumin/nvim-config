@@ -14,3 +14,6 @@ require('plugins.treesitter') -- https://github.com/nvim-treesitter/nvim-treesit
 require('plugins.lsp.mason') -- managine and isntalling lsp servers, linters, formatters
 require('plugins.lsp.lspconfig') -- configure language servers
 require('plugins.lsp.null-ls') -- formatters and linters
+require('plugins.nvim-cmp') -- formatters and linters
+require('plugins.autopairs') -- autopairs
+require('plugins.colorsheme') -- preferred colorsheme
