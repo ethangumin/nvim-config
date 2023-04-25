@@ -19,6 +19,7 @@ opt.incsearch = true
 opt.scrolloff = 8
 opt.colorcolumn = "80"
 opt.backspace = "indent,eol,start"
+opt.cursorline = true
 g.moonflyTransparent = true
 
 -- clipboard
