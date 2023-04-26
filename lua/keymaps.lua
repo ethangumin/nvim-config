@@ -6,11 +6,10 @@ local keymap = vim.keymap
 
 keymap.set("n", "<Space>pv", vim.cmd.Ex)
 keymap.set("i", "<Space>jk", "<Esc>")
-
 keymap.set("n", "x", '"_x') -- delete single character without copying into register
-
 keymap.set("n", "<C-d>", "<C-d>zz") -- jump down half page
 keymap.set("n", "<C-u>", "<C-u>zz") -- jump up half page
+keymap.set("i", "<C-e>", "<C-o>A") -- append to end of line without leaving insert mode
 
 -- window management
 keymap.set("n", "<Space>sv", "<C-w>v") -- split window vertically

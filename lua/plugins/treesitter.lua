@@ -21,6 +21,9 @@ treesitter.setup({
     "vim",
     "c",
     "cpp",
+    "rust",
+    "markdown",
+    "markdown_inline",
   },
   -- auto install above language parsers
   auto_install = true,

@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/goom/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/Users/goom/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/goom/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
