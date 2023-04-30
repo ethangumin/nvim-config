@@ -18,18 +18,12 @@ local on_attach = function(client, bufnr)
   local opts = { noremap = true, silent = true, buffer = bufnr }
 
   -- set keybinds
-  keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
+  keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- go to declaration
   keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 end
 
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities = cmp_nvim_lsp.default_capabilities()
-
--- configure clangd for C/C++ 
-lspconfig["clangd"].setup({
-    capabilities = capabilities,
-    on_attach = on_attach,
-})
 
 -- configure rust analyzer
 lspconfig["rust_analyzer"].setup({
