@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/goom/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/goom/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/goom/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -155,11 +160,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/goom/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-moonfly-colors"] = {
-    loaded = true,
-    path = "/Users/goom/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

@@ -82,7 +82,7 @@ return packer.startup(function(use)
     use("szw/vim-maximizer") -- maximizes and restores current window
 
     -- colors
-    use("bluz71/vim-moonfly-colors")
+    use({ "catppuccin/nvim", as = "catppuccin" })
 
     -- This must be at the end after all plugins
     if packer_bootstrap then

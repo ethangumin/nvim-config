@@ -1,7 +1,10 @@
--- set colorscheme to moonfly with protected call
--- in case it isn't installed
-local status, _ = pcall(vim.cmd, "colorscheme moonfly")
+local status, catppuccin = pcall(require, "catppuccin")
 if not status then
-  print("Colorscheme not found!") -- print error if colorscheme not installed
-  return
+    return
 end
+
+catppuccin.setup({
+    transparent_background = true
+})
+
+vim.cmd.colorscheme "catppuccin"

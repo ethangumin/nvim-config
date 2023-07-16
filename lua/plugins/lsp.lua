@@ -18,6 +18,7 @@ lsp.ensure_installed({
     'rust_analyzer',
     'clangd',
     'cmake',
+    'pyright',
 })
 
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
